@@ -1,0 +1,89 @@
+@startmindmap
+* Modellgetriebenen Softwareentwicklung
+
+** Grundlagen
+*** Modellgetriebene Softwareentwicklung befasst sich mit dem systematischen Erstellen von formalen Domänenmodellen und deren automatisierter schrittweiser Transformation bis hin zur Codegenerierung
+
+*** Motivation
+**** erhoffter Nutzen
+***** Produktivität durch höhere Flexibilität
+****** vereinfachte Erstellung von Varianten / Plattformen / Technologien
+***** Geringere Entwicklungskosten
+****** unvermeidliche Redundanz mittels Modelltransformation automatisieren
+***** Qualität durch Konsistenz in Abstraktionsebenen
+***** Trennung von Domänen Aspekte
+****** Verständlichkeit
+****** Wartbarkeit
+**** Probleme
+***** Domäne muss gut verstanden sein
+***** Abstrakter Ansatz braucht oft anlaufszeit bis Ergebnis sichtbar werden
+
+*** Modellierung
+**** Modellbegriff
+***** Abbildung
+****** Ein Modell ist immer ein Abbild eines Originals
+******* Präskriptives Modell => Vorbild für ein noch zu erstellendes Original
+******* Deskriptives Modell => Abbild für ein existierendes Original
+******* Transientes Modell => Abbild als auch Vorbild eines Originals
+***** Verkürzung
+****** Ein Modell erfasst nicht alle Merkmale des Originals
+******* Symbolisierendes Modell => Weglassen von Originalentitäten
+******* Klassifizierendes Modell => Zusammenfassen gleichartiger von Originalentitäten
+***** Pragmatismus
+****** Die Zuordnung eines Modells zu einem Original wird durch die Frage der Nützlichkeit relativiert
+******* Beschreibungsmodell => Dokumentiert oder spezifiziert Eigenschaften des Originals
+******* Prognosemodell => Dokumentiert oder spezifiziert Eigenschaften des Originals
+
+*** Domänenspezifische Sprachen
+**** Domäne => Arbeits-, Wissensgebiet
+**** DSL => Domain Specific Language => Fachsprache
+***** Vorteil: relevante Aspekte einfach, kompakt und können auf unterschiedliche Implementierungen abgebildet werden.
+***** Vorteil: Verständlich für Domänenexperten
+**** Domänenanalyse
+***** Glossar => Liste von Begriffen mit Erklärung
+***** Taxonomie => hierarchischer Einordnung von Begriffen in Kategorien
+***** Thesaurus => Taxonomie + Synonym-/Verwandschafts-Beziehungen
+***** Ontologie => Begriffsnetz, semantisches Netz
+**** Sprachklassen
+***** Klassifizierung nach Notation
+****** rein textuell
+****** graphisch
+***** Klassifizierung nach Implementierung:
+****** Spezialisierung einer Universalsprache => UML, XML
+****** Black-Box-Einbettung in eine Wirtssprache => regex, printf ect.
+****** White-Box-Einbettung in eine Wirtssprache (interne DSL) => fluent API in Java
+****** eigenständige Sprache (externe DSL)  => Unix Shell, Scala Sprache
+**** Syntax
+***** konkrete Syntax => wie etwas formiliert wird
+***** abstrakte Syntax => was formiliert wird
+**** Semantik
+***** statische Semantik => Wohlgeformtheit  => XSD ?
+***** dynamische Semantik => Bedeutung von Formulierungen
+**** DSL-Werkzeuge
+***** Parser => wandelt konkrete Syntax in abstrakte Syntax
+***** Serialisierer  => umgekehrt zu Parser abstrakt zu konkret
+***** Editor => ermöglicht interaktives arbeiten mit DSL
+***** Interpreter / Transformatoren / Generatoren => verarbeitet in abstrakte Syntax vorliegenden Informationen
+
+*** Modelltransformation
+**** M2M => Modell zu Modell
+***** Abbildung eines Quellmodells auf ein Zielmodell
+***** Formulierung der Transformation aufgrund Metamodelle
+***** beide Metamodelle müssen das gleiche Meta-Metamodell haben
+**** M2T => Modell zu Text
+***** Abbildung eines Modells zu einer Textuellen Representation
+
+
+left side
+
+** Anwendung
+*** XTend
+**** generiert Java Source Code und compiliert zu JVM Bytecode
+*** Scala
+**** compiliert zu JVM Bytecode
+
+
+
+
+
+@endmindmap

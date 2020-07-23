@@ -1,0 +1,23 @@
+@startmindmap
+* AlgoTech
+** Grundlagen
+*** Ein Algorithmus => Verfahrung zur Lösung eines Problems
+**** Eigenschaften
+***** Allgemeinheit => Lösung von Problemklassen (nicht EInzelaufgaben)
+***** Determiniert => Gleiche Eingabe -> gleiche Ausgabe
+***** Terminierung => läuft endlich lange
+***** Korrektheit => berechnet die spezifieyierte Ausgabe falls er terminiert
+***** Effizienz => Sparsamkeit Ressourcenverbrauch
+****** unabhängig von Rechner oder Impl
+****** wird durch Algorithmenanalyse berechnet
+*** Datenstruktur => Strukturierung von Daten
+*** Master Theorem
+** Teile und Hersche
+*** Zerlegung in unabhängige Teilprobleme
+** Greedy
+*** Immer Optimalitätsprüfung!
+** Dynamisches Programmieren
+*** Problem muss überlappende Teilprobleme haben
+** Backtracking
+*** BrutForce Allgorithmus
+@endmindmap
